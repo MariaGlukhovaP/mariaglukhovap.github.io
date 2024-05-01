@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mi-Giro</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- Шапка -->
+      <header>
+        <div class="header-container">
+          <div class="logo"><h2>LOGO</h2></div>
+          <ul class="nav">
+            <li><a href="#">8 (993) 528 21-81</a></li>
+            <li>
+              <div class="btn">Заказать звонок</div>
+            </li>
+          </ul>
+        </div>
+      </header>
+
+      <main>
+        <!-- Наши преимущества -->
+        <div class="advantages-container">
+          <div class="title">
+            Наши преимущества<img
+              class="line-1 line"
+              src="design-elements/Line 1.png"
+              alt=""
+            />
+          </div>
+
+          <div class="slider-container">
+            <div class="switch">
+              <input type="radio" name="slider" id="adv-1" />
+              <input type="radio" name="slider" id="adv-2" />
+              <input type="radio" name="slider" id="adv-3" />
+
+              <div class="controls">
+                <label for="adv-1"></label>
+                <label for="adv-2"></label>
+                <label for="adv-3"></label>
+              </div>
+
+              <div class="adv-wrapper">
+                <div class="box">
+                  <div id="adv-img" class="adv-img1"></div>
+                  <div class="adv-title">Оригинальность</div>
+                  <div class="adv-description">
+                    В нашем магазине вы найдете только оригинальные гироскутеры
+                  </div>
+                </div>
+
+                <div class="box">
+                  <div id="adv-img" class="adv-img2"></div>
+                  <div class="adv-title">Бесплатная доставка</div>
+                  <div class="adv-description">
+                    Мы осуществляем бесплатную доставку наших гироскутеров до
+                    двери
+                  </div>
+                </div>
+
+                <div class="box">
+                  <div id="adv-img" class="adv-img3"></div>
+                  <div class="adv-title">Лучшие цены</div>
+                  <div class="adv-description">
+                    Мы часто устраиваем акции и специальные предложения для
+                    наших покупателей
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Особенности гироскутеров, электросамокатов и сегвеев -->
+        <div class="specifities-container">
+          <div class="title specifities-title">
+            Особенности гироскутеров, электросамокатов и сигвеев<img
+              class="line-2 line"
+              src="design-elements/Line 1.png"
+              alt=""
+            />
+          </div>
+
+          <div class="specifities-wrapper">
+            <div class="segway" id="specifity">
+              <img src="img/segway.png" alt="segway" class="specifities-img" />
+              <div class="specifity-description">
+                <p class="segway-p">
+                  Два колеса сегвея расположены соосно. Сегвей автоматически
+                  балансируется при изменении положения корпуса ездока: для этой
+                  цели используется система индикаторной стабилизации: сигналы с
+                  гироскопических и жидкостных датчиков наклона поступают на
+                  микропроцессоры, которые вырабатывают электрические сигналы,
+                  воздействующие на двигатели и управляющие их движениями.
+                  Каждое колесо сегвея приводится во вращение своим
+                  электродвигателем, реагирующим на изменения равновесия машины.
+                </p>
+              </div>
+            </div>
+
+            <div class="giroscooter" id="specifity">
+              <div class="specifity-description">
+                <p class="giroscooter-p">
+                  Главное отличие гироскутера от сегвея — отсутствие рулевой
+                  колонки. В гироскутере управление осуществляется не
+                  манипуляцией руками, а перемещением массы тела из стороны в
+                  сторону. Например, для движения вперёд необходимо наклониться
+                  в соответствующем направлении, для торможения и движения
+                  назад — наоборот. Повороты осуществляются при помощи более
+                  сильного поворота стороны, правой или левой.
+                </p>
+              </div>
+              <img
+                src="img/giro.png"
+                alt="giroscooter"
+                class="specifities-img"
+              />
+            </div>
+
+            <div class="electrosamokat" id="specifity">
+              <img
+                src="img/samokat.png"
+                alt="samokat"
+                class="specifities-img"
+              />
+              <div class="specifity-description">
+                <p class="electrosamokat-p">
+                  С помощью портативного электросамоката райдер может
+                  передвигаться на солидной скорости, не прилагая особых
+                  физических усилий. Даже в самой скромной комплектации он
+                  станет незаменим для постоянно перемещающегося подростка,
+                  активного взрослого водителя или экстремала, никогда не
+                  планирующего своих маршрутов. Этот транспорт позволит
+                  городскому жителю стать независимым от пробок, городского
+                  общественного транспорта и личного автомобиля.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Каталог товаров -->
+        <div class="catalogue-container">
+          <div class="title">
+            Каталог товаров
+            <img src="design-elements/Line 1.png" alt="" class="line-3 line" />
+          </div>
+
+          <input
+            class="filter-input"
+            type="radio"
+            id="All"
+            name="categories"
+            value="All"
+            checked
+          />
+          <input
+            class="filter-input"
+            type="radio"
+            id="Giroscooters"
+            name="categories"
+            value="Giroscooters"
+          />
+          <input
+            class="filter-input"
+            type="radio"
+            id="Electrosamokats"
+            name="categories"
+            value="Electrosamokats"
+          />
+          <input
+            class="filter-input"
+            type="radio"
+            id="Segveis"
+            name="categories"
+            value="Segveis"
+          />
+
+          <div class="filter-container">
+            <div class="filter-item"><label for="All">Все</label></div>
+            <div class="filter-item">
+              <label for="Giroscooters">Гироскутеры</label>
+            </div>
+            <div class="filter-item">
+              <label for="Electrosamokats">Электросамокаты</label>
+            </div>
+            <div class="filter-item"><label for="Segveis">Сегвеи</label></div>
+          </div>
+
+          <div class="product-cards-container">
+            <div class="product-card" data-category="Segveis">
+              <a href="#"
+                ><img
+                  src="img/sigvej-xiaomi-chernyj.jpg"
+                  alt="segway"
+                  id="product-card-img"
+                  class="segway-card-img"
+              /></a>
+              <div class="product-card-description">
+                <div class="product-card-title">
+                  <a href="#" class="product-title-link"
+                    >Сегвей MiniRobot PRO 54V Черный</a
+                  >
+                </div>
+                <div class="product-card-price">20 990 руб.</div>
+                <div class="product-card-type">Вид: сегвей</div>
+              </div>
+            </div>
+
+            <div class="product-card" data-category="Electrosamokats">
+              <a href="#"
+                ><img
+                  src="img/electrosamokat.jpg"
+                  alt="samokat"
+                  id="product-card-img"
+                  class="samokat-card-img"
+              /></a>
+              <div class="product-card-description">
+                <div class="product-card-title">
+                  <a href="#" class="product-title-link"
+                    >Электросамокат KUGOO S3 (Jilong)</a
+                  >
+                </div>
+                <div class="product-card-price">25 990 руб.</div>
+                <div class="product-card-type">Вид: электросамокат</div>
+              </div>
+            </div>
+
+            <div class="product-card" data-category="Giroscooters">
+              <a href="#"
+                ><img
+                  src="img/giroscooter.png"
+                  alt="giroscooter"
+                  id="product-card-img"
+                  class="giroscooter-card-img"
+              /></a>
+              <div class="product-card-description">
+                <div class="product-card-title">
+                  <a href="#" class="product-title-link"
+                    >Гироскутер GT 6,5" с ручкой</a
+                  >
+                </div>
+                <div class="product-card-price">9 990 руб.</div>
+                <div class="product-card-type">Вид: гироскутер</div>
+              </div>
+            </div>
+
+            <div class="product-card" data-category="Segveis">
+              <a href="#"
+                ><img
+                  src="img/sigvej-xiaomi-chernyj.jpg"
+                  alt="segway"
+                  id="product-card-img"
+                  class="segway-card-img"
+              /></a>
+              <div class="product-card-description">
+                <div class="product-card-title">
+                  <a href="#" class="product-title-link"
+                    >Сегвей MiniRobot PRO 54V Черный</a
+                  >
+                </div>
+                <div class="product-card-price">20 990 руб.</div>
+                <div class="product-card-type">Вид: сегвей</div>
+              </div>
+            </div>
+
+            <div class="product-card" data-category="Electrosamokats">
+              <a href="#"
+                ><img
+                  src="img/electrosamokat.jpg"
+                  alt="samokat"
+                  id="product-card-img"
+                  class="samokat-card-img"
+              /></a>
+              <div class="product-card-description">
+                <div class="product-card-title">
+                  <a href="#" class="product-title-link"
+                    >Электросамокат KUGOO S3 (Jilong)</a
+                  >
+                </div>
+                <div class="product-card-price">25 990 руб.</div>
+                <div class="product-card-type">Вид: электросамокат</div>
+              </div>
+            </div>
+
+            <div class="product-card" data-category="Giroscooters">
+              <a href="#"
+                ><img
+                  src="img/giroscooter.png"
+                  alt="giroscooter"
+                  id="product-card-img"
+                  class="giroscooter-card-img"
+              /></a>
+              <div class="product-card-description">
+                <div class="product-card-title">
+                  <a href="#" class="product-title-link"
+                    >Гироскутер GT 6,5" с ручкой</a
+                  >
+                </div>
+                <div class="product-card-price">9 990 руб.</div>
+                <div class="product-card-type">Вид: гироскутер</div>
+              </div>
+            </div>
+
+            <div class="product-card" data-category="Segveis">
+              <a href="#"
+                ><img
+                  src="img/sigvej-xiaomi-chernyj.jpg"
+                  alt="segway"
+                  id="product-card-img"
+                  class="segway-card-img"
+              /></a>
+              <div class="product-card-description">
+                <div class="product-card-title">
+                  <a href="#" class="product-title-link"
+                    >Сегвей MiniRobot PRO 54V Черный</a
+                  >
+                </div>
+                <div class="product-card-price">20 990 руб.</div>
+                <div class="product-card-type">Вид: сегвей</div>
+              </div>
+            </div>
+
+            <div class="product-card" data-category="Electrosamokats">
+              <a href="#"
+                ><img
+                  src="img/electrosamokat.jpg"
+                  alt="samokat"
+                  id="product-card-img"
+                  class="samokat-card-img"
+              /></a>
+              <div class="product-card-description">
+                <div class="product-card-title">
+                  <a href="#" class="product-title-link"
+                    >Электросамокат KUGOO S3 (Jilong)</a
+                  >
+                </div>
+                <div class="product-card-price">25 990 руб.</div>
+                <div class="product-card-type">Вид: электросамокат</div>
+              </div>
+            </div>
+
+            <div
+              class="product-card last"
+              data-category="Giroscooters"
+              id="last-card"
+            >
+              <a href="#"
+                ><img
+                  src="img/giroscooter.png"
+                  alt="giroscooter"
+                  id="product-card-img"
+                  class="giroscooter-card-img"
+              /></a>
+              <div class="product-card-description">
+                <div class="product-card-title">
+                  <a href="#" class="product-title-link"
+                    >Гироскутер GT 6,5" с ручкой</a
+                  >
+                </div>
+                <div class="product-card-price">9 990 руб.</div>
+                <div class="product-card-type">Вид: гироскутер</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Консультанты в нашем магазине-->
+        <div class="workers-container">
+          <div class="title">
+            Консультанты в нашем магазине<img
+              class="line-4 line"
+              src="design-elements/Line 1.png"
+              alt=""
+            />
+          </div>
+          <div class="workers-cards">
+            <div class="worker-card">
+              <a href="#">
+                <img
+                  src="img/handsome-young-man-with-arms-crossed-white-background.jpg"
+                  alt="worker-1"
+                  class="worker-img"
+                />
+              </a>
+              <div class="workers-text">
+                <div class="worker-title">
+                  <a href="#">Влад</a>
+                </div>
+                <div class="worker-description">Опыт работы: 3 года</div>
+              </div>
+            </div>
+
+            <div class="worker-card">
+              <a href="#">
+                <img
+                  src="img/handsome-young-man-with-arms-crossed-white-background.jpg"
+                  alt="worker-1"
+                  class="worker-img"
+                />
+              </a>
+              <div class="workers-text">
+                <div class="worker-title">
+                  <a href="#">Влад</a>
+                </div>
+                <div class="worker-description">Опыт работы: 3 года</div>
+              </div>
+            </div>
+
+            <div class="worker-card">
+              <a href="#">
+                <img
+                  src="img/handsome-young-man-with-arms-crossed-white-background.jpg"
+                  alt="worker-1"
+                  class="worker-img"
+                />
+              </a>
+              <div class="workers-text">
+                <div class="worker-title">
+                  <a href="#">Влад</a>
+                </div>
+                <div class="worker-description">Опыт работы: 3 года</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Бренды -->
+        <div class="brands-container">
+          <div class="title">
+            Бренд, представленные в Mi-Giro
+            <img src="design-elements/Line 1.png" alt="" class="line-5 line" />
+          </div>
+          <div class="brands-text">
+            <p>
+              Мы сотрудничаем только с официальными поставщиками брендов,
+              <br />именно поэтому люди нам доверяют!
+            </p>
+            <p>
+              Ниже представлены самые популярные бренды, <br />которые
+              представлены в нашем магазине
+            </p>
+          </div>
+          <img src="design-elements/Group 1.png" alt="" class="brands-img" />
+        </div>
+
+        <div class="info">
+          <div class="title">
+            Полезная информация для покупателей<img
+              class="line-6 line"
+              src="design-elements/Line 1.png"
+              alt=""
+            />
+          </div>
+          <div class="info-bg">
+            <img src="img/Rectangle 16.png" alt="" class="info-img" />
+            <div class="info-text">
+              Возврат товаров можно осуществить в течение 14 дней со дня покупки
+              <br />
+              На нашу технику распространяется гарантия 1 год со дня покупки
+              <br />Для всех наших товаров можно оформить бесплатную доставку до
+              двери
+            </div>
+          </div>
+        </div>
+
+        <!-- О компании -->
+        <div class="about">
+          <div class="title">
+            О нас
+            <img class="line-7 line" src="design-elements/Line 1.png" alt="" />
+          </div>
+
+          <div class="about-container">
+            <div class="about-text">
+              <p>
+                Наш магазин гироскутеров успешно работает на рынке уже более
+                семи лет. За это время мы накопили огромный опыт и уверенно
+                заявляем о себе как о надежном поставщике качественных
+                гироскутеров.
+              </p>
+              <p>
+                Мы постоянно следим за новинками и тенденциями в мире
+                гироскутеров, чтобы предложить нашим клиентам только самые
+                современные и надежные модели.
+              </p>
+              <p>
+                Наша цель - обеспечить вас удовольствием от покупки и
+                использования гироскутера, а также гарантировать ваше
+                удовлетворение от сотрудничества с нами. Благодарим за ваше
+                доверие и выбор нашего магазина!
+              </p>
+            </div>
+            <div class="about-form">
+              <div class="about-form-text">
+                <div class="about-form-title">Будь в курсе</div>
+                <div class="about-form-description">
+                  Получайте специальные предложения и <br />новости от нас
+                  первыми
+                </div>
+              </div>
+              <div class="inputs">
+                <div>
+                  <input
+                    type="text"
+                    placeholder="Ваше имя"
+                    class="form-input"
+                  />
+                </div>
+                <div>
+                  <input
+                    type="email"
+                    placeholder="Ваш email"
+                    class="form-input"
+                  />
+                </div>
+              </div>
+              <div class="btn form-btn">Подписаться</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Отзывы покупателей -->
+        <div class="reviews-container">
+          <div class="title">
+            Отзывы наших покупателей
+            <img src="design-elements/Line 1.png" alt="" class="line-8 line" />
+          </div>
+          <div class="reviews">
+            <div class="review">
+              <div class="name">Александр</div>
+              <div class="date">12.03.2023</div>
+              <div class="description">
+                Покупали самокат на день рождения сына. Нас встретил вежливый и
+                доброжелательный продавец Иван, помог с выбором. Классный
+                магазин с большим ассортиментом! Приходим не первый раз и
+                вернемся снова
+              </div>
+            </div>
+            <div class="review">
+              <div class="name">Александр</div>
+              <div class="date">12.03.2023</div>
+              <div class="description">
+                Покупали самокат на день рождения сына. Нас встретил вежливый и
+                доброжелательный продавец Иван, помог с выбором. Классный
+                магазин с большим ассортиментом! Приходим не первый раз и
+                вернемся снова
+              </div>
+            </div>
+            <div class="review">
+              <div class="name">Александр</div>
+              <div class="date">12.03.2023</div>
+              <div class="description">
+                Покупали самокат на день рождения сына. Нас встретил вежливый и
+                доброжелательный продавец Иван, помог с выбором. Классный
+                магазин с большим ассортиментом! Приходим не первый раз и
+                вернемся снова
+              </div>
+            </div>
+            <div class="review">
+              <div class="name">Александр</div>
+              <div class="date">12.03.2023</div>
+              <div class="description">
+                Покупали самокат на день рождения сына. Нас встретил вежливый и
+                доброжелательный продавец Иван, помог с выбором. Классный
+                магазин с большим ассортиментом! Приходим не первый раз и
+                вернемся снова
+              </div>
+            </div>
+            <div class="review">
+              <div class="name">Александр</div>
+              <div class="date">12.03.2023</div>
+              <div class="description">
+                Покупали самокат на день рождения сына. Нас встретил вежливый и
+                доброжелательный продавец Иван, помог с выбором. Классный
+                магазин с большим ассортиментом! Приходим не первый раз и
+                вернемся снова
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Кнопка для возврата на верх -->
+        <div class="back-to-top-wrapper">
+          <a href="#" class="back-to-top-link" aria-label="Scroll to Top"
+            ><img src="design-elements/Vector 1.png" alt=""
+          /></a>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
