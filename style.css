@@ -242,12 +242,12 @@ header {
   }
 
   .controls {
-    bottom: 210px;
+    bottom: 220px;
   }
 
   .controls label {
-    width: 18px;
-    height: 18px;
+    width: 15px;
+    height: 15px;
     border-radius: 15px;
   }
 
@@ -260,6 +260,12 @@ header {
   .switch input:nth-child(2):checked ~ .controls label:nth-child(2),
   .switch input:nth-child(3):checked ~ .controls label:nth-child(3) {
     width: 30px;
+  }
+}
+
+@media screen and (min-width: 1024px) and (min-height: 1366px) {
+  .controls {
+    bottom: 570px;
   }
 }
 
